@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
+    <title>Golden Hive – Artisan Honey Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+
+  <body>
+    
+    <!-- NAVIGATION BAR -->
+
+    <nav>
+      <div class="logo">
+        <span class="logo-hex">⬡</span>
+        Golden Hive
+      </div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#" class="nav-cta">🛒 Cart (<span id="cart-count">0</span>)</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!-- HERO SECTION -->
+
+    
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-tag">🍯 100% Raw &amp; Natural</div>
+
+        <h1>Pure Honey<br />From the <em>Heart</em><br />of Nature</h1>
+
+        <p>
+          Handcrafted by bees, harvested with love. Our artisan honey comes
+          straight from wildflower meadows to your table — unfiltered, unheated, and utterly
+          unforgettable.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#products" class="btn-primary">Shop Now →</a>
+          <a href="#about" class="btn-outline">Our Story</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num" data-target="50">0</div>
+            <div class="stat-label">Honey Varieties</div>
+          </div>
+
+          <div>
+            <div class="stat-num" data-target="12000">0</div>
+            <div class="stat-label">Happy Customers</div>
+          </div>
+
+          <div>
+            <div class="stat-num" data-target="15">0</div>
+            <div class="stat-label">Years of Craft</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="jar-container">
+          <div class="jar-bg"></div>
+          <svg
+            class="jar-svg"
+            viewBox="0 0 200 280"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+
+            <!-- Lid -->
+      
+            <rect x="55" y="30" width="90" height="18" rx="9" fill="#8B4513" />
+            <rect x="48" y="42" width="104" height="12" rx="6" fill="#6B3410" />
+      
+            <!-- Jar body -->
+      
+            <path
+              d="M55 54 Q48 70 46 100 L46 230 Q46 250 100 250 Q154 250 154 230 L154 100 Q152 70 145 54 Z"
+              fill="#FFF9EC"
+              stroke="#E8A020"
+              stroke-width="2"/>
+
+            <!-- Honey fill -->
+      
+            <path
+              d="M50 140 Q50 130 100 128 Q150 130 150 140 L154 230 Q154 250 100 250 Q46 250 46 230 Z"
+              fill="#F5B942"
+              opacity="0.9"/>
+
+            <!-- Honey top wave -->
+      
+            <path
+              d="M50 140 Q65 134 80 138 Q95 142 100 138 Q110 134 125 138 Q140 142 150 138"
+              stroke="#E8820C"
+              stroke-width="2"
+              fill="none"
+            />
+      
+            <!-- Shine -->
+      
+            <ellipse
+              cx="75"
+              cy="100"
+              rx="8"
+              ry="24"
+              fill="rgba(255,255,255,0.35)"
+              transform="rotate(-12 75 100)"
+            />
+      
+            <!-- Honeycomb pattern -->
+      
+            <text x="82" y="120" font-size="28" fill="rgba(232,130,12,0.15)">
+              ⬡
+            </text>
+            <text x="68" y="145" font-size="18" fill="rgba(232,130,12,0.12)">
+              ⬡
+            </text>
+            <text x="98" y="145" font-size="18" fill="rgba(232,130,12,0.12)">
+              ⬡
+            </text>
+      
+            <!-- Label -->
+      
+            <rect
+              x="60"
+              y="160"
+              width="80"
+              height="50"
+              rx="8"
+              fill="white"
+              stroke="#F5B942"
+              stroke-width="1.5"
+            />
+            <text
+              x="100"
+              y="178"
+              text-anchor="middle"
+              font-family="Georgia"
+              font-size="8"
+              font-weight="bold"
+              fill="#3D1F00"
+            >
+              GOLDEN HIVE
+            </text>
+            <text
+              x="100"
+              y="190"
+              text-anchor="middle"
+              font-family="Georgia"
+              font-size="6"
+              fill="#C4600A"
+            >
+              Pure Wildflower
+            </text>
+            <text
+              x="100"
+              y="200"
+              text-anchor="middle"
+              font-size="9"
+              fill="#F5B942"
+            >
+              🍯 100% RAW
+            </text>
+            <!-- Drip -->
+            <path
+              d="M145 54 Q148 65 150 70 Q152 76 149 80 Q146 84 145 80 Q143 76 145 70 Z"
+              fill="#F5B942"
+            />
+            <path
+              d="M60 54 Q57 65 55 70 Q53 76 56 80 Q59 84 60 80 Q62 76 60 70 Z"
+              fill="#F5B942"
+              opacity="0.6"
+            />
+          </svg>
+          <div class="hero-badge">
+            <div class="badge-icon">⭐</div>
+            <div>
+              <div class="badge-val">4.9/5.0</div>
+              <div class="badge-label">400+ Reviews</div>
+            </div>
+          </div>
+          <div class="hero-badge2">🌿 Organic<br />Certified</div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- FEATURES STRIP -->
+
+    <div class="features-strip">
+      <div class="feat-item">
+        <span class="feat-icon">🚚</span> Free Shippingfor orders above Ksh 1000
+      </div>
+      <div class="feat-item">
+        <span class="feat-icon">🌿</span> 100% Organic Certified
+      </div>
+      <div class="feat-item">
+        <span class="feat-icon">🔄</span> 30-Day Returns
+      </div>
+      <div class="feat-item">
+        <span class="feat-icon">🍯</span> Cold-Extracted Process
+      </div>
+      <div class="feat-item">
+        <span class="feat-icon">🐝</span> Bee-Friendly Farming
+      </div>
+    </div>
+  
+    <!-- PRODUCTS GRID -->
+  
+    <section class="products" id="products">
+      <div class="section-header">
+        <div class="sec-label">Our Collection</div>
+        <h2>Taste the Difference</h2>
+        <p>
+          Every jar tells the story of the flowers our bees visited and the land
+          they called home.
+        </p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card">
+          <div class="product-img p1">
+            <span class="card-badge">Best Seller</span>
+          </div>
+          <div class="product-body">
+            <div class="stars">★★★★★</div>
+            <div class="product-name">Wildflower Honey</div>
+            <div class="product-sub">Raw &amp; Unfiltered · 500g</div>
+
+            <div class="product-footer">
+              <span class="price">Ksh 800</span>
+              <button
+                class="add-btn"
+                data-name="Wildflower Honey"
+                data-price="800"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img p2"> 
+            <span class="card-badge">New</span>
+          </div> 
+          <div class="product-body">
+            <div class="stars">★★★★★</div>
+            <div class="product-name">Baringo Honey</div>
+            <div class="product-sub">MGO 400+ · 250g</div>
+            <div class="product-footer">
+              <span class="price">Ksh 4200</span>
+              <button
+                class="add-btn"
+                data-name="Baringo Honey"
+                data-price="4200"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img p3">🌲</div>
+          <div class="product-body">
+            <div class="stars">★★★★☆</div>
+            <div class="product-name">Forest Honeydew</div>
+            <div class="product-sub">Dark &amp; Rich · 500g</div>
+            <div class="product-footer">
+              <span class="price">Ksh 2450</span>
+              <button
+                class="add-btn"
+                data-name="Forest Honeydew"
+                data-price="2450"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-img p4">
+            <span class="card-badge">Limited</span>
+          </div>
+          <div class="product-body">
+            <div class="stars">★★★★★</div>
+            <div class="product-name">Rose Infused Honey</div>
+            <div class="product-sub">Floral &amp; Delicate · 350g</div>
+            <div class="product-footer">
+              <span class="price">Ksh 2200</span>
+              <button
+                class="add-btn"
+                data-name="Rose Infused Honey"
+                data-price="2200"
+              >
+                +
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ABOUT SECTION -->
+    
+    <section class="about" id="about">
+      <div class="about-visual">
+        <div class="about-img ai1">🌻</div>
+        <div class="about-img ai2">🐝</div>
+        <div class="about-img ai3">🌿</div>
+      </div>
+      <div>
+        <div class="sec-label" style="color: var(--gold)">Our Story</div>
+
+        <h2>Three Generations of Beekeeping Excellence</h2>
+
+        <p>
+          Founded in 2026 by Hillary, Golden Hive began with a single
+          hive in a sunflower field in rural Nakuru. Today we tend over 800
+          hives across four pristine apiaries.
+        </p>
+
+        <p>
+          We believe honey should be as nature intended — raw, alive, and
+          bursting with the flavors of the landscape where our bees forage.
+        </p>
+
+        <div class="about-pills">
+          <span class="pill">🌍 Sustainably Sourced</span>
+          <span class="pill">🔬 Lab Tested</span>
+          <span class="pill">🏆 Award Winning</span>
+          <span class="pill">🌱 Regenerative Farms</span>
+        </div>
+      </div>
+    </section>
+
+  
+    <!-- PROCESS SECTION -->
+
+    <section class="process">
+      <div class="section-header">
+        <div class="sec-label">How It's Made</div>
+        <h2>From Hive to Table</h2>
+        <p>
+          Every step is handled with meticulous care to preserve the natural
+          goodness of our honey.
+        </p>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-icon">
+            🌸
+            <div class="step-num">1</div>
+          </div>
+          <h3>Bees Forage</h3>
+          <p>
+            Our bees roam freely across pesticide-free wildflower meadows,
+            collecting nectar from hundreds of flower species.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            🍯
+            <div class="step-num">2</div>
+          </div>
+          <h3>Natural Ripening</h3>
+          <p>
+            Bees transform nectar in the hive over 2–3 weeks, reducing moisture
+            and developing complex flavor profiles.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            ⚙️
+            <div class="step-num">3</div>
+          </div>
+          <h3>Cold Extraction</h3>
+          <p>
+            Honey is extracted without heat, preserving enzymes, antioxidants,
+            and beneficial compounds in every jar.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            📦
+            <div class="step-num">4</div>
+          </div>
+
+          <h3>Packed Fresh</h3>
+
+          <p>
+            Each batch is tested, hand-labeled, and shipped within days of
+            extraction to your door.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- TESTIMONIALS -->
+  
+
+    <section class="testimonials">
+      <div class="section-header">
+        <div class="sec-label">What Customers Say</div>
+        <h2>Loved by Honey Lovers</h2>
+        <p>
+          Over 1000 happy customers can't stop raving about the difference
+          real honey makes.
+        </p>
+      </div>
+      <div class="test-grid">
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <div class="test-text">
+            "I've tried dozens of honeys over the years. Golden Hive's
+            Wildflower is unlike anything from a supermarket shelf. You can
+            truly taste the flowers."
+          </div>
+          <div class="test-author">
+            <div class="test-avatar">👩</div>
+            <div>
+              <div class="test-name">Mayah </div>
+              <div class="test-loc">Kinoo, Nairobi</div>
+            </div>
+          </div>
+        </div>
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <div class="test-text">
+            "The Baringo honey has been a game changer for my morning routine.
+            Thick, rich, and absolutely delicious on sourdough toast."
+          </div>
+
+          <div class="test-author">
+            <div class="test-avatar">👨</div>
+            <div>
+              <div class="test-name">Hillary</div>
+              <div class="test-loc">Regen, Nairobi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="test-card">
+          <div class="test-stars">★★★★★</div>
+          <div class="test-text">
+            "Ordered as a gift and my sister called to say it was the best honey
+            she's ever had. Will definitely be ordering again for the holidays."
+          </div>
+          <div class="test-author">
+            <div class="test-avatar">🧑</div>
+            <div>
+              <div class="test-name">Humprey.</div>
+              <div class="test-loc">Muthiga, Nairobi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- NEWSLETTER -->
+    
+    <section class="newsletter">
+      <div
+        class="sec-label"
+        style="color: rgba(255, 255, 255, 0.7); margin-bottom: 0.5rem"
+      >
+        Stay in the Loop
+      </div>
+      <h2>Join the Hive 🐝</h2>
+      <p>
+        Get seasonal recipes, beekeeping stories, and 10% off your first order.
+      </p>
+      <div class="nl-form">
+        <input
+          class="nl-input"
+          type="email"
+          id="nl-email"
+          placeholder="Enter your email address..."
+        />
+        <button class="nl-btn" id="nl-submit">Subscribe →</button>
+      </div>
+      <p class="nl-success" id="nl-success">
+        🍯 Thank you! You're now part of the hive.
+      </p>
+    </section>
+
+  
+    <!-- FOOTER -->
+    
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">⬡ Golden Hive</div>
+          <div class="footer-desc">
+            Pure artisan honey, crafted with care by three generations of
+            beekeepers in the heart of Vermont since 2025.
+          </div>
+          <div class="social-icons">
+            <div class="soc-btn"> <i class="fab fa-facebook-f"></i></div>
+            <div class="soc-btn"> <i class="fab fa-instagram"></i></div>
+            <div class="soc-btn"> <i class="fab fa-twitter"></i></div>
+            <div class="soc-btn"> <i class="fab fa-youtube"></i></div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Wildflower Honey</a></li>
+            <li><a href="#">Baringo Honey</a></li>
+            <li><a href="#">Unfiltered Honeys</a></li>
+            <li><a href="#">Gift Sets</a></li>
+            <li><a href="#">Subscriptions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Beekeeping</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Golden Hive. All rights reserved.</span>
+        <span
+          >Made with <span class="honey-drop"></span> and 🐝 by the Carter
+          Family</span
+        >
+        <span>Privacy · Terms · Cookies</span>
+      </div>
+    </footer>
+    <!-- Cart Toast Notification -->
+    <div class="cart-toast" id="cart-toast">
+      <span id="toast-msg">🍯 Added to cart!</span>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
