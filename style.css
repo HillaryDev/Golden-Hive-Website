@@ -831,6 +831,11 @@ nav ul a:hover {
 
 /* ─── FOOTER ─── */
 footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap:wrap;
   background: var(--dark);
   color: var(--cream);
   padding: 4rem 4rem 2rem;
