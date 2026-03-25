@@ -888,6 +888,16 @@ footer {
   border-color: var(--honey);
 }
 
+.soc-links a:hover{
+  color:unset;
+}
+
+.soc-links a{
+  color: unset;
+  text-decoration: none;
+}
+
+
 .footer-col h4 {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
